@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking-Multipurpose Oline Booking Theme</title>
+</head>
+<body class="font-sans bg-white box-border">
+
+
+  <header>
+    <!-- <nav class=" h-[90px] w-full p-0 m-0"> -->
+      <div class="w-[100%] px-[6%] flex  py-5 h-[70px] nav z-50 bg-white transition-all duration-500 fixed right-0 left-0 top-[-70px] border-b overflow-hidden">
+        <!-- first child  -->
+        <div class="basis-1/2 max-sm:basis-5/12 flex items-center box-border max-xl:gap-5 ">
+<!-- LOGO  -->
+          <div class="basis-4/12 max-sm:basis-11/12 bg-white flex justify-end max-sm:justify-start">
+            <img class="w-[150px]" src="https://booking.webestica.com/assets/images/logo.svg" alt="">
+          </div>
+<!-- UL  -->
+          <ul class="basis-8/12  w-full h-full max-xl:hidden flex flex-row items-center justify-center gap-5 text-black font-semibold cursor-pointer">
+<!-- FIRST LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Listings</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto bg-white z-10
+              ">
+               
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Hotel</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 text-sm
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel China</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Resort</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Grid</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel List</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Room Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Flight</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight List</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Tour</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Grid</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Cab</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Home</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab List</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Details</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Directory</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Directory Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Directory Details</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Add Listing</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Join us</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Add Listing</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Add Listing Minimal</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Listing Added</p></div>
+                  </div>
+                </div>
+              
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Hero</p>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg></span>
+                <!-- child dropdown  -->
+                <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                transition-all duration-500">
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Inline Form</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Multiple Search</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Image Gallery</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Split</p></div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Booking Confirmed</p>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Compare Listing</p>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Offer Detail</p>
+              </div>
+
+            </div>
+            </li>
+
+<!-- SECOND LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Pages</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>About</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Contact</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Contact 2</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Our Team</p>
+                  </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Authentication</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Sign In</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Sign Up</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Forgot Password</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Two factor authentication</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Blog</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Blog</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Blog Detail</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Help</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Help Center</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Help Detail</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Privacy Policy</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Term of Service</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Pricing</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>FAQs</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Error 404</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Coming Soon</p>
+                </div>
+        
+
+              
+
+            </div>
+            </li>
+
+<!-- THIRD LI              -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Accounts</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                  
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>User Profile</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>My Profile</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>My Bookings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Travelers</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Payment Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Wishlist</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Settings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Delete profile</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Agent Dashboard</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Dashboard</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Listings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Bookings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Activities</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Earnings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Reviews</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Activities</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Master Admin</p>
+                </div>
+        
+
+              
+
+            </div>
+            </li>
+<!-- FOURTH LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600 py-2">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Sport</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Documentation</p>
+                </div>
+        
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>RTL demo</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Buy Booking!</p>
+                </div>
+              
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Components</p>
+                </div>
+
+            </div>
+            </li>
+
+          </ul>
+
+<!-- HIDDEN MENU  -->          
+          <div class="xl:hidden basis-6/12 max-sm:hidden flex flex-row items-center justify-start gap-2">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span>
+            <p class="text-lg max-sm:hidden">Menu</p>
+          </div>
+        </div>
+
+
+        <!-- second child  -->
+        <div class="basis-1/2 max-sm:basis-7/12 flex gap-1 box-border max-xl:gap-5 max-sm:gap-2 max-sm:justify-end">
+          <!-- baby first child  -->
+          <div class="basis-9/12 flex items-center justify-end gap-1.5 max-xl:hidden cursor-pointer">
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold text-purple-800 bg-slate-100">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
+                <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H3Zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+              </svg></span>
+              <p>Hotel</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <span class="rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+              </svg></span>
+              <p>Flight</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-2-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+              </svg></span>
+              <p>Tour</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+              <p>Cab</p>
+            </div>
+          </div>
+
+          <!-- hidden first menu  -->
+          <div class="sm:hidden max-sm:basis-auto flex justify-center items-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span>
+          </div>
+          
+          <!-- hidden first menu  -->
+          <div class="xl:hidden basis-9/12 max-sm:basis-auto flex items-center justify-end gap-1.5">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+              <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+            </svg></span>
+            <p class="text-lg max-sm:hidden">Category</p>
+          </div>
+
+          <!-- baby second child  -->
+          <div class="basis-3/12 max-sm:basis-auto flex flex-row items-center gap-2 cursor-pointer">
+
+            <div class="w-[40px] h-10 rounded-lg bg-slate-100 flex justify-center items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg></span>
+            </div>
+
+            <div class="w-[40px] h-10 rounded-lg flex justify-center items-center">
+              <img  class="w-full rounded-lg" src="https://booking.webestica.com/assets/images/avatar/01.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+     </div>
+    <!-- </nav> -->
+  </header>
+  
+  <header>
+    <!-- <nav class=" h-[90px] w-full p-0 m-0"> -->
+      <div class="w-[100%] px-[6%] flex  py-5 h-auto z-50 bg-white relative">
+        <!-- first child  -->
+        <div class="basis-1/2 max-sm:basis-5/12 flex items-center box-border max-xl:gap-5 ">
+<!-- LOGO  -->
+          <div class="basis-4/12 max-sm:basis-11/12 bg-white flex justify-end max-sm:justify-start">
+            <img class="w-[150px]" src="https://booking.webestica.com/assets/images/logo.svg" alt="">
+          </div>
+<!-- UL  -->
+          <ul class="basis-8/12  w-full h-full max-xl:hidden flex flex-row items-center justify-center gap-5 text-black font-semibold cursor-pointer">
+<!-- FIRST LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Listings</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto bg-white z-10
+              ">
+               
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Hotel</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 text-sm
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel China</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Resort</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Grid</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel List</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Room Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hotel Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Flight</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight List</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Flight Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Tour</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Grid</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Tour Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Cab</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Home</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab List</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Details</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Cab Booking</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Directory</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Directory Home</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Directory Details</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Add Listing</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Join us</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Add Listing</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Add Listing Minimal</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Listing Added</p></div>
+                  </div>
+                </div>
+              
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Hero</p>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg></span>
+                <!-- child dropdown  -->
+                <div class="w-[230px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[200px] top-[-10px] opacity-0 pointer-events-none 
+                group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto text-slate-500 
+                transition-all duration-500">
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Inline Form</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Multiple Search</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Image Gallery</p></div>
+                  <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-5 py-1"><p>Hero Split</p></div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Booking Confirmed</p>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Compare Listing</p>
+              </div>
+
+              <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                <p>Offer Detail</p>
+              </div>
+
+            </div>
+            </li>
+
+<!-- SECOND LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Pages</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>About</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Contact</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Contact 2</p>
+                  </div>
+
+                  <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                    <p>Our Team</p>
+                  </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Authentication</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Sign In</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Sign Up</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Forgot Password</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Two factor authentication</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Blog</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Blog</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Blog Detail</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Help</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Help Center</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Help Detail</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Privacy Policy</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Term of Service</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Pricing</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>FAQs</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Error 404</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Coming Soon</p>
+                </div>
+        
+
+              
+
+            </div>
+            </li>
+
+<!-- THIRD LI              -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600">
+              <p>Accounts</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                  
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>User Profile</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>My Profile</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>My Bookings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Travelers</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Payment Details</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Wishlist</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Settings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Delete profile</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Agent Dashboard</p>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></span>
+                  <!-- child dropdown  -->
+                  <div class="w-[245px] px-3 py-4 flex flex-col gap-4 bg-white shadow-lg rounded-xl absolute left-[210px] top-[-10px] opacity-0 pointer-events-none text-slate-500 
+                  group-hover/smalldrp:opacity-100 group-hover/smalldrp:left-[217px] group-hover/smalldrp:pointer-events-auto 
+                  transition-all duration-500">
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Dashboard</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Listings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Bookings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Activities</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Earnings</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Reviews</p></div>
+                    <div class="hover:bg-gray-100 hover:text-blue-600 rounded-lg px-4 py-1"><p>Activities</p></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Master Admin</p>
+                </div>
+        
+
+              
+
+            </div>
+            </li>
+<!-- FOURTH LI  -->
+            <li class="group/lidrop px-2 flex items-center gap-1 relative hover:text-blue-600 py-2">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+              </svg></span>
+              <!-- double dropdown  -->
+              <!-- dropdown  -->
+              <div class="absolute w-[240px] rounded-xl shadow-lg py-7 px-3 flex flex-col gap-2 
+              top-12 -left-3 opacity-0 pointer-events-none transition-all duration-500 group-hover/lidrop:opacity-100
+               group-hover/lidrop:top-6 group-hover/lidrop:pointer-events-auto z-10 bg-white
+              ">
+               
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Sport</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Documentation</p>
+                </div>
+        
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>RTL demo</p>
+                </div>
+
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Buy Booking!</p>
+                </div>
+              
+                <div class="flex justify-between items-center px-2 py-1 hover:bg-gray-100 rounded-lg font-semibold text-slate-500 text-sm hover:text-blue-600 relative group/smalldrp">
+                  <p>Components</p>
+                </div>
+
+            </div>
+            </li>
+
+          </ul>
+
+<!-- HIDDEN MENU  -->          
+          <div class="xl:hidden basis-6/12 max-sm:hidden flex flex-row items-center justify-start gap-2">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span>
+            <p class="text-lg max-sm:hidden">Menu</p>
+          </div>
+        </div>
+
+
+        <!-- second child  -->
+        <div class="basis-1/2 max-sm:basis-7/12 flex gap-1 box-border max-xl:gap-5 max-sm:gap-2 max-sm:justify-end">
+          <!-- baby first child  -->
+          <div class="basis-9/12 flex items-center justify-end gap-1.5 max-xl:hidden cursor-pointer">
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold text-purple-800 bg-slate-100">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
+                <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H3Zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+              </svg></span>
+              <p>Hotel</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <span class="rotate-90"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+              </svg></span>
+              <p>Flight</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-2-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+              </svg></span>
+              <p>Tour</p>
+            </div>
+
+            <div class="basis-1/5 flex items-center gap-2 rounded-lg px-4 py-2 text-md font-semibold hover:bg-slate-100 hover:text-purple-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+              <p>Cab</p>
+            </div>
+          </div>
+
+          <!-- hidden first menu  -->
+          <div class="sm:hidden max-sm:basis-auto flex justify-center items-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span>
+          </div>
+          
+          <!-- hidden first menu  -->
+          <div class="xl:hidden basis-9/12 max-sm:basis-auto flex items-center justify-end gap-1.5">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+              <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+            </svg></span>
+            <p class="text-lg max-sm:hidden">Category</p>
+          </div>
+
+          <!-- baby second child  -->
+          <div class="basis-3/12 max-sm:basis-auto flex flex-row items-center gap-2 cursor-pointer">
+
+            <div class="w-[40px] h-10 rounded-lg bg-slate-100 flex justify-center items-center">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg></span>
+            </div>
+
+            <div class="w-[40px] h-10 rounded-lg flex justify-center items-center">
+              <img  class="w-full rounded-lg" src="https://booking.webestica.com/assets/images/avatar/01.jpg" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    <!-- </nav> -->
+  </header>
+
+  <!-- <div class="absolute w-full top-[80px] z-10 flex flex-col mt-2">
+
+   
+    <div class="border py-3 px-7 flex justify-between">
+      <h1>List</h1>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </span>
+    </div>
+
+
+  </div> -->
+
+
+<!-- HOME 1  --> 
+
+    <div class="container mx-auto h-[600px] mt-20 max-xl:mt-10 flex flex-row max-xl:flex-col max-xl:h-auto">
+
+      <!-- 1st child  -->
+      <div class="basis-1/2 h-full px-20 py-5 max-xl:px-[5%]">
+
+        <div>
+          <h1 class="text-[67px] leading-[67px] max-xl:leading-[90px] max-xl:text-[60px] max-lg:text-[50px] max-lg:leading-[60px] font-bold -translate-y-7 max-xl:translate-y-0 relative">Find the top Hotels nearby.
+            <span class="absolute left-[6%] bottom-[-10%] max-xl:left-[38%] max-lg:hidden opacity-70 -z-10">
+              <svg width="390.5px" height="21.5px" viewBox="0 0 445.5 21.5">
+                <path class="fill-purple-500 opacity-7" d="M409.9,2.6c-9.7-0.6-19.5-1-29.2-1.5c-3.2-0.2-6.4-0.2-9.7-0.3c-7-0.2-14-0.4-20.9-0.5 c-3.9-0.1-7.8-0.2-11.7-0.3c-1.1,0-2.3,0-3.4,0c-2.5,0-5.1,0-7.6,0c-11.5,0-23,0-34.5,0c-2.7,0-5.5,0.1-8.2,0.1 c-6.8,0.1-13.6,0.2-20.3,0.3c-7.7,0.1-15.3,0.1-23,0.3c-12.4,0.3-24.8,0.6-37.1,0.9c-7.2,0.2-14.3,0.3-21.5,0.6 c-12.3,0.5-24.7,1-37,1.5c-6.7,0.3-13.5,0.5-20.2,0.9C112.7,5.3,99.9,6,87.1,6.7C80.3,7.1,73.5,7.4,66.7,8 C54,9.1,41.3,10.1,28.5,11.2c-2.7,0.2-5.5,0.5-8.2,0.7c-5.5,0.5-11,1.2-16.4,1.8c-0.3,0-0.7,0.1-1,0.1c-0.7,0.2-1.2,0.5-1.7,1 C0.4,15.6,0,16.6,0,17.6c0,1,0.4,2,1.1,2.7c0.7,0.7,1.8,1.2,2.7,1.1c6.6-0.7,13.2-1.5,19.8-2.1c6.1-0.5,12.3-1,18.4-1.6 c6.7-0.6,13.4-1.1,20.1-1.7c2.7-0.2,5.4-0.5,8.1-0.7c10.4-0.6,20.9-1.1,31.3-1.7c6.5-0.4,13-0.7,19.5-1.1c2.7-0.1,5.4-0.3,8.1-0.4 c10.3-0.4,20.7-0.8,31-1.2c6.3-0.2,12.5-0.5,18.8-0.7c2.1-0.1,4.2-0.2,6.3-0.2c11.2-0.3,22.3-0.5,33.5-0.8 c6.2-0.1,12.5-0.3,18.7-0.4c2.2-0.1,4.4-0.1,6.7-0.1c11.5-0.1,23-0.2,34.6-0.4c7.2-0.1,14.4-0.1,21.6-0.1c12.2,0,24.5,0.1,36.7,0.1 c2.4,0,4.8,0.1,7.2,0.2c6.8,0.2,13.5,0.4,20.3,0.6c5.1,0.2,10.1,0.3,15.2,0.4c3.6,0.1,7.2,0.4,10.8,0.6c10.6,0.6,21.1,1.2,31.7,1.8 c2.7,0.2,5.4,0.4,8,0.6c2.9,0.2,5.8,0.4,8.6,0.7c0.4,0.1,0.9,0.2,1.3,0.3c1.1,0.2,2.2,0.2,3.2-0.4c0.9-0.5,1.6-1.5,1.9-2.5 c0.6-2.2-0.7-4.5-2.9-5.2c-1.9-0.5-3.9-0.7-5.9-0.9c-1.4-0.1-2.7-0.3-4.1-0.4c-2.6-0.3-5.2-0.4-7.9-0.6 C419.7,3.1,414.8,2.9,409.9,2.6z"></path>
+              </svg>
+            </span>
+          </h1>
+        </div>
+
+        <div class="text-gray-500 mb-5">
+          <p>We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+        </div>
+
+        <div class="flex gap-7">
+          <button class=" px-3 py-2 rounded-lg bg-slate-300 text-purple-600 font-semibold hover:bg-blue-900 hover:text-white">Discover Now</button>
+          
+          <div class="flex items-center gap-3 text-slate-700">
+            <span class="relative">
+              <img class="w-10 rounded-full" src="https://booking.webestica.com/assets/images/avatar/12.jpg" alt="">
+              <span class="absolute top-3 left-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                </svg>
+              </span>
+            </span>
+          
+            <button> Watch our story </button>
+          </div>
+          
+           
+         
+
+
+        </div>
+
+      </div>
+
+
+      <!-- 2nd child  -->
+      <div class="basis-1/2 h-full">
+        <div class="w-[80%] h-full ml-[5%] relative max-xl:w-[90%] max-xl:ml-[5%]">
+          <img class="w-full h-full rounded-lg" src="https://booking.webestica.com/assets/images/bg/06.jpg" alt="">
+          <img class="w-14 h-14 object-cover rounded-full border-2 max-sm:hidden border-white absolute top-7 -left-7" src="https://booking.webestica.com/assets/images/category/hotel/4by3/11.jpg" alt="">
+          <img class="w-20 h-20 object-cover rounded-full border-2 max-sm:hidden border-white absolute top-32 -left-10" src="https://booking.webestica.com/assets/images/category/hotel/4by3/12.jpg" alt="">
+          <div class="w-36 h-36 bg-slate-50 opacity-70 border-2 border-white shadow-xl rounded-xl absolute -right-7 max-sm:-right-3 -top-7
+          flex flex-col items-center justify-center gap-2">
+            <span class="text-red-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+              </svg>
+            </span>
+            <h1 class="font-bold text-2xl">24/7</h1>
+            <p class="font-semibold text-sm">Guide Supports</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- HOME 2 -->
+
+    <div class="container mx-auto flex h-[130px] relative translate-y-[-150px] max-xl:translate-y-[-5%] max-xl:flex-col-reverse max-xl:h-auto">
+  
+        
+        <!-- caption  -->
+        <h1 class="text-slate-700 text-lg font-semibold mb-2 absolute top-[-40px] left-[85px] max-xl:hidden">Check Availability</h1>
+
+<!-- 1st child -->
+      <div class="basis-10/12 h-full ml-20 max-xl:basis-1/2 max-xl:ml-0">
+      
+        <!-- flex box -->
+        <div class="w-[95%] h-full bg-white shadow-2xl  rounded-xl flex flex-row px-8 max-xl:flex-col max-xl:h-auto max-xl:w-[90%] max-xl:ml-[5%] ">
+          <!-- first  -->
+          <div class=" h-full ">
+            <div class="my-7 flex flex-row items-center justify-start gap-2 px-[15px]">
+              <span class="text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+              </span>
+              <span class="relative flex-grow">
+                <input class="border border-slate-400 h-16 max-xl:h-12 w-[100%] rounded-xl px-3 focus:outline-none focus:border-purple-500" type="text" placeholder="Select location" id="location">
+                <label for="location" class=" text-slate-500 font-semibold bg-white px-2 absolute left-[15px] top-[-10px] ">Location</label>
+              </span>
+            </div>
+          </div>
+
+          <!-- second  -->
+          <div class=" h-full">
+            <div class="my-7 flex flex-row items-center justify-start gap-2 px-[15px]">
+              <span class="text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+              </span>
+              <span class="relative flex-grow">
+                <input class="border border-slate-400 h-16 max-xl:h-12 w-[100%] rounded-xl px-3 focus:outline-none focus:border-purple-500" type="text" placeholder="19 Sep to 28 Sep" id="location">
+                <label for="location" class=" text-slate-500 font-semibold bg-white px-2 absolute left-[15px] top-[-10px] ">Check in - out</label>
+              </span>
+            </div>
+          </div>
+
+          <!-- third  -->
+          <div class=" h-full">
+            <div class="my-7 flex flex-row items-center justify-start gap-2 px-[15px]">
+              <span class="text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>
+              </span>
+              <span class="relative flex-grow">
+                <input class="border border-slate-400 h-16 max-xl:h-12 w-[100%] rounded-xl px-3 focus:outline-none focus:border-purple-500" type="text" placeholder="2 Guests 1 Room" id="location">
+                <label for="location" class=" text-slate-500 font-semibold bg-white px-2 absolute left-[15px] top-[-10px] ">Guests & rooms</label>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+<!-- 2nd child        -->
+      <div class="basis-2/12 h-full relative max-xl:basis-1/2">
+        <span class="absolute bottom-0 left-0 max-xl:left-[75%] max-sm:left-[50%]">
+          <svg width="163px" height="163px" viewBox="0 0 163 163">
+            <path class="fill-yellow-400" d="M145.6,66.2c-0.9-0.3-1.6,0.2-2.1-0.4c-0.5-0.7-1-1.5-1-2.4c0-3.1,0.1-6.2,0-9.3c0-0.7,0.3-1.3,0.5-1.9 c0.8-1.6,1.6-3.2,2.7-4.5c0.5-0.6,1.2-1.2,2-1.5c0.4-0.2,0.8,0.4,1.3-0.1c0.4-0.4,1,0.7,1.6,0.7c0.4,1-0.4,1.5-1,2.1 c0.7,0.3,1.4,0.3,2.1,0.7c0.6,0.4,1.2,0.7,1,1.5c-0.2,1,0.6,1.3,1,1.9c-0.2,0.3-0.6,0.4-0.5,0.8c1.2,3.2,0.3,5.4-0.7,8.1 c-0.3,0.7-0.7,1.6-0.7,2.2c-0.1,1.5-1.2,2.7-1.4,4.1c-0.2,1.1-0.9,1.7-2.1,1.6c-0.2,0-0.4,0.5-1,0.4c-0.2-0.2-0.7-0.5-0.7-0.8 c0-1-0.1-1.7-1.1-2.1C145.5,67.2,145.6,66.6,145.6,66.2"></path>
+            <path class="fill-yellow-400" d="M94.3,143.5c1.1,0.3,2.4-0.5,3.2,0.7c-0.4,0.7-0.7,1.4-1,2.1c0.5,0.5,0.7,0.2,1.2,0.1c1.6-0.6,2-0.4,2.5,1.2 c0.1,0.2,0,0.6,0.3,0.6c1.8,0.4,1.4,2.2,2.1,3.2c-0.8,0.9,0.5,1.8,0.1,2.6c-0.5,0.8-0.3,2-1.3,2.6c-0.3,0.2-0.1,0.5-0.2,0.7 c-0.3,2.1-1.2,3.7-3.4,4.4c-0.3,0.1-0.4,0.6-1,0.4c-0.3-0.6-0.6-1.3-1-1.9c-0.5-0.2-1.5,0.3-1.4-1h-3c-0.2-1.4,0-2.9-1.1-3.9 c-0.1-0.1-0.1-0.4,0-0.5c0.7-1.2,0.2-2.6,0.7-3.8c0.3-0.6,0.4-1,0.1-1.6c-0.9-1.3,0-2.4,0.7-3.3C92.5,145,93.4,144.3,94.3,143.5"></path>
+            <path class="fill-yellow-400" d="M119.6,77.3c-0.4,0.8-1.1,0.6-2,0.8c0.2,1.1-0.4,2.2,0.5,3.3c-0.8,0-0.8,0-1.2-0.3c-0.6,0.3-0.8,1-1.2,1.6 c0.1-1.9-0.6-3.2-2-4.1c-0.6-0.1-0.7,0.3-1,0.5c-1-1.9-1-2.8-0.2-7.7c0.4-2.5,1.7-4.6,3.6-6.8c0.6-0.1,1.5,1.5,2.3,0 c0.8,1.5-0.7,2.3-0.8,3.7c0.8-0.4,1.6-0.7,2.4-0.4c0.4,0.4-0.1,1,0.3,1.4c0.8,0.6,1.4,1.3,0.4,2.3c1.1,0.8-0.3,1.5-0.1,2.4 c0.2,0.8,0,1.7,0,2.5c-0.8-0.2-1-1.1-1.8-1C118.2,76.4,119.5,76.5,119.6,77.3"></path>
+            <path class="fill-yellow-400" d="M25,131c-0.3-0.6-1.2-0.3-1.7-0.5v-1.2c-0.1-0.1-0.1-0.2-0.2-0.2c-1.4,0.5-2.2-1-3.4-1.2 c-1.2-0.1-1.9-1-2.1-2.2c-0.1-0.5,0.1-0.8,0.5-1.1c-2-1.7-0.8-3.4-0.1-5.1c0.8-2.2,2.6-2.5,4.6-2.4c0.4,1.1,0.2,2-0.6,2.7 c1.5,1,2-0.5,3-0.8c0.3,0.6,0.6,1.2,0.9,1.6c0,0.6-0.8,0.8-0.4,1.4c0.7,0.8,0.9-0.5,1.7-0.3c1,0.9,0.9,2.2,0.8,3.4 c0.4,0.1,0.6,0.2,1,0.3c-0.1,0.6-1,0.8-1,1.5c0,0.8,0.8,0.2,1,0.7C27.7,128.8,26.9,130.3,25,131"></path>
+            <path class="fill-yellow-400" d="M84.9,95H87c0.4,0.4,0.3,1.6-0.3,2.8c1.2,1,1.7-0.5,2.4-0.8c0.8,0,0.8,0.6,1.2,0.7c0.2,0.8-0.7,0.9-0.4,1.7 c0.5,0.3,1.7,0,1.9,0.9c0.2,0.7,0.3,1.5-0.5,2.1c0.3,0.1,0.6,0.2,0.9,0.3c-0.1,0.7-1.1,1.3-0.5,2.2c-1.1,1.5-3,2.1-4.4,3.3 c-0.3,0.2-0.8,1-1.5,0.5c-0.3-0.4,0.4-0.4,0.3-0.8c-0.7-0.5-1.6,0.1-2.4-0.3c-0.2-0.6,0.1-1.4-0.8-1.8c-1.1,0.5-2.2,0.7-3.2-0.8 c1.3-0.8,3-1.1,3.2-3c-1,0-1.7,0.9-2.7,1c-0.2-0.2-0.5-0.4-0.8-0.7c-0.1-0.1,0.1-0.1,0.2-0.3c0.6-1.1,2.4-1,2.5-2.5 c1.2-0.5,1.1-1.7,1.3-2.5C83.8,96.3,84.3,95.7,84.9,95"></path>
+            <path class="fill-yellow-400" d="M41.2,153.9c0.3-0.7,0.9-0.8,0.4-1.6c-0.3-0.3-1.1,0.2-1.8-0.2c0-0.2-0.1-0.4-0.1-0.7c-0.1-0.1-0.2-0.2-0.3,0 c-0.3,0.4-0.7,0.4-1.1,0.4c-1.3,0-1.5-0.4-1.6-1.7c0-0.6,0.4-0.8,0.5-1.4c-0.4,0-0.8-0.1-1.4-0.1c-0.4-1.9,0.7-3.6,1.1-5.4 c0.2-0.9,1.6-1.3,2.7-1.3c0.4,0.2,0.3,0.6,0.3,0.7c0.2,0.4,0.3,0.3,0.4,0.1c0.6-0.5,1.3-0.6,1.7,0.1c0.5,0.7,1.1,0.6,1.8,0.7 c0.4,0.4,0.1,0.8,0.2,1.2c0.3,0.4,0.8,0.2,1.3,0.3c1,0.7,0.5,2.1,1.3,2.9C43.8,152.3,43.1,153.1,41.2,153.9"></path>
+            <path class="fill-yellow-400" d="M70.9,43.4c-0.3-1.4-1.2-1.8-2.6-1.5c-1.2-2.3-0.8-4.8-0.5-7.2c0.1-0.5,0.4-1.1,0.3-1.7 c-0.2-1.1,0.5-1.9,0.6-2.9c0.1-0.7,1.3-0.9,2-1.3c0.9,0.8,0.9,0.8,1.2,2c0.3,0,0.6,0,0.4,0c1.3,0,0.8,0.9,1.3,1.2 c0.3,0.1,0.8,0.5,0.7,1c-0.2,0.8,1,1.4,0.5,2.1c-0.5,0.7-0.2,1.5-0.5,2.1c-0.8,1.5-1,3.2-1.5,4.8C72.6,43.1,72,43.4,70.9,43.4"></path>
+            <path class="fill-yellow-400" d="M125.4,118.4c-0.4-0.3-0.6-0.7-1.3-0.8c-1.6-0.1-1.6-0.2-1.9-1.9c-1.1-0.4-2.2,0-3.2,0.4 c-0.5-0.5-0.2-0.9-0.4-1.4c0.4-0.1,0.7-0.2,1-0.4v-3c-0.5,0.2-1,0.3-1.7,0.5c-0.3,0-0.4-0.6-0.8-0.7c0.6-1.5,1.8-2.4,2.8-3.5 c1.3,0.3,2.6-1.1,3.8,0.4c0,0.1-0.1,1.8,0,2.1c-0.2,0-0.5,0.1-0.7,0.1c-0.2,0-0.3,0-0.5,0c-0.4,0.4-0.1,1.1-0.7,1.5 c1.3-0.5,2.4-1,3.3-2c0.4,0.4,0.7,0.8,1.4,0.6c-1.1,0.9,0.4,2.1-1,2.9c1,0,1.1-0.6,1.5-0.8c0.4-0.1,0.8-0.1,1.2-0.2 c0.5,1,1.1,1.8,0.6,3c-0.7,0.6-2.2,0.4-2.5,2.1c1.2-0.2,1.9-0.9,2.5-1.5c0.7,0.1,0.7,0.5,0.6,0.8c-1.3-0.1-1.2,1.5-2.3,1.9 c-0.9,0.3-1.6,1-2.7,1.8C124.7,119.5,125.1,119,125.4,118.4"></path>
+            <path class="fill-yellow-400" d="M101.7,41c-0.3,0.3-0.6,0.6-0.9,0.9c0.9,0.6-0.9,1.6,0.4,2.1c-2,2.3-2,2.4-2.1,4.8h-2.4c-0.2-0.1,0-0.5-0.2-0.8 c-2.4-0.3-2.9-0.8-3-3.3c0-0.6,0.2-1.4-0.5-1.8c0.5-0.7,0.2-1.6,0.7-2.4c1-1.5,2.3-2.7,3.5-3.9c0.5-0.2,1-0.1,1.4,0 c0.2,1-1.1,1.6-0.2,2.6c0.3-0.4,0.6-0.8,0.9-1.3C100.2,39.2,101.7,39.5,101.7,41"></path>
+            <path class="fill-yellow-400" d="M140.4,5.4c-0.4,0.6-1.2-0.1-1.5,0.6c0.7,0.4,1.5,0.1,2.3,0.2c0.3,1.1,0.9,2.1,1.3,3.2c0.9,2.4,0.3,4.4-0.6,6.6 c-0.4,0.9-0.9,1.2-1.9,1c-0.2-0.5-0.5-1.2-0.9-1.9c-0.6-0.2-1.5,0-1.9-1c0.1-1.7,0.1-3.6-1.1-5.2c0.4-0.7,0.7-1.3,1.1-1.9 c-0.3-0.1-0.6-0.2-1-0.4c0.2-0.8,0.5-1.6,1.3-2.3h2.2C140,4.6,140.5,4.8,140.4,5.4"></path>
+            <path class="fill-yellow-400" d="M65.7,68.8c-0.4,0.6-0.9,0.4-1.4,0.4c-1.2-1.1-0.4-2.9-1.4-4.1c1.5-3,1.5-3,4.1-4.2c0.5,0.1,0.8,0.5,1,1 c0.1,0.6-0.8,0.7-0.5,1.3c0.5,0.6,0.9,0.2,1.2-0.2c1.5,0.6,1.1,2.5,2.4,3.3c-0.1,1.1,0.2,2.2-0.2,3.2L69,72.2c-0.3,0-0.7,0-1,0 c-0.3-0.5-0.9-2.2-0.8-2.4C66.7,69.6,66.2,69.2,65.7,68.8"></path>
+            <path class="fill-yellow-400" d="M37.5,69.7c-0.5,0.2,0,0.9-0.4,1c-0.7,0.2-1-0.2-1.2-0.6c-0.4-0.7,0.1-1.6-0.2-2.2c-0.5-0.7-0.6-1.2-0.1-2 c0.5-0.6,0.2-1.5,0.6-2.3c0.9-2,0.9-2.1,3-2.1c0.1,0.1,0.2,0.1,0.2,0.2c0,0.3,0,0.7,0,1.1c0.7,0.4,1.7,0.1,2.1,1.3 c0.3,0.9,1.2,1.5,1,2.7c-0.2,0.9,0.1,1.8-0.8,2.5c-0.4,0.4-0.8,1.1-0.8,2c0,0.6-0.5,1-1.2,1.1c-0.6,0.1-1-0.3-1.2-0.7 C38,71,37.8,70.3,37.5,69.7"></path>
+            <path class="fill-yellow-400" d="M53.9,87.8c0.7,0,1.4,0,2.1,0c0.5,0.3,0.1,1,0.4,1.4c0.4,0.3,0.8,0.1,1.2,0.2c0.6,1.2,1.4,2.4,1.7,3.6 c0.4,1.4-0.2,2.7-0.7,4c-1,0.4-1.5-0.4-2.1-0.9c-0.7,0-1.4,0-2.1,0c-0.4-1-0.8-1.8-2.1-1.5c-0.6-0.7,0.2-1.8-0.7-2.3 c0.5-0.6,0.9-1.3,1-2.1C52.8,89.2,53.2,88.5,53.9,87.8"></path>
+            <path class="fill-yellow-400" d="M0.1,95.7c0.9-1.3,2.3-1.7,3.8-1.8c1,1.2-0.7,1.5-0.8,2.3c1.1,1,2-0.7,3.1,0c0.6,0.6-0.2,0.8-0.3,1.2 c0.4,0.5,1,0,1.4,0.3c0.4,1.1-0.3,2.3,0.6,3.3c-0.8,0.8-0.7,2.2-1.9,2.8c-1.1-0.2-1.8-1-2.6-1.7c-0.7-0.6-1.9-0.5-2.6-1.9 C1,98.9-0.4,97.4,0.1,95.7"></path>
+            <path class="fill-yellow-400" d="M155.5,91.5c-0.9-0.5-1.7-0.7-2.3-1.6c0.4-0.2,0.8-0.5,1.2-0.7c-1.2-0.4-2.1,0.7-3.1,0c0.6-1,1.8-1,2.5-1.7 c0.1-0.6-0.3-0.6-0.7-0.7c-0.7-0.2-0.9,0.9-1.6,0.5c-0.3-0.3-0.4-0.7-0.1-0.9c1.7-1,3-2.3,4.5-3.5c0.9-0.7,1.1-0.9,2.5-1.2 c-0.1,0.5-0.6,0.7-0.9,1.1c0.7,0.7,1.3,0.1,1.9-0.2c0.1,1.1,0.9,1.9,0.5,3.4C158.3,87.4,157.4,89.8,155.5,91.5"></path>
+          </svg>
+        </span>
+      </div>
+
+    </div>
+
+
+<!-- HOME 3 -->
+
+    <div class="container mx-auto mb-28 max-xl:mt-20 max-xl:mb-0">
+      <div class="w-[88%] max-xl:w-[90%] max-xl:mx-[5%] mx-[6%] flex gap-5 overflow-hidden home3-box">
+
+        
+        <div class="w-[32%] max-xl:w-[48.5%] max-lg:w-[100%] flex-shrink-0 border rounded-xl flex transition-all duration-500 home3-child">
+          <div class="basis-1/2">
+            <img class="rounded-l-xl" src="https://booking.webestica.com/assets/images/offer/03.jpg" alt="">
+          </div>
+          <div class="basis-1/2 flex flex-col justify-center items-start gap-2 pl-3">
+            <h1 class="font-bold">Book & Enjoy</h1>
+            <p>20% Off on the best available room rate</p>
+          </div>
+        </div>
+
+        <div class="w-[32%] max-xl:w-[48.5%] max-lg:w-[100%] flex-shrink-0 border rounded-xl flex transition-all duration-500 home3-child">
+          <div class="basis-1/2">
+            <img class="rounded-l-xl" src="https://booking.webestica.com/assets/images/offer/02.jpg" alt="">
+          </div>
+          <div class="basis-1/2 flex flex-col justify-center items-start gap-2 pl-3">
+            <h1 class="font-bold">Hot Summer Nights</h1>
+            <p>Up to 3 night free!</p>
+          </div>
+        </div>
+
+        <div class="w-[32%] max-xl:w-[48.5%] max-lg:w-[100%] flex-shrink-0 border rounded-xl flex transition-all duration-500 home3-child">
+          <div class="basis-1/2">
+            <img class="rounded-l-xl" src="https://booking.webestica.com/assets/images/offer/01.jpg" alt="">
+          </div>
+          <div class="basis-1/2 flex flex-col justify-center items-start gap-2 pl-3">
+            <h1 class="font-bold">Daily 50 Lucky Winners get a Free Stay</h1>
+            <p>Valid till: 29 Dec</p>
+          </div>
+        </div>
+
+        <div class="w-[32%] max-xl:w-[48.5%] max-lg:w-[100%] flex-shrink-0 border rounded-xl flex transition-all duration-500 home3-child">
+          <div class="basis-1/2">
+            <img class="rounded-l-xl" src="https://booking.webestica.com/assets/images/offer/04.jpg" alt="">
+          </div>
+          <div class="basis-1/2 flex flex-col justify-center items-start gap-2 pl-3">
+            <h1 class="font-bold">Up to 60% OFF</h1>
+            <p>On Hotel Bookings Online</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- HOME 4  -->
+
+    <div class="container mx-auto mt-20 max-xl:mt-16">
+
+      <div class="w-[88%] mx-[6%] max-lg:w-[90%] max-lg:mx-[5%] flex max-lg:flex-col max-xl:gap-10">
+
+        <!-- first child  -->
+        <div class="max-xl:w-[100%] w-[45%] relative max-xl:mt-20">
+          <img class="w-[90%] max-sm:w-[100%] rounded-2xl rounded-tl-none " src="https://booking.webestica.com/assets/images/about/01.jpg" alt="">
+          <span class="absolute bottom-[-9%] right-2  max-xl:bottom-[-2%] max-xl:right-1 max-lg:right-3 max-lg:bottom-[-6%] max-sm:hidden -z-10">
+            <svg height="400" class="fill-slate-300 " viewBox="0 0 340 340">
+              <circle cx="194.2" cy="2.2" r="2.2"></circle>
+              <circle cx="2.2" cy="2.2" r="2.2"></circle>
+              <circle cx="218.2" cy="2.2" r="2.2"></circle>
+              <circle cx="26.2" cy="2.2" r="2.2"></circle>
+              <circle cx="242.2" cy="2.2" r="2.2"></circle>
+              <circle cx="50.2" cy="2.2" r="2.2"></circle>
+              <circle cx="266.2" cy="2.2" r="2.2"></circle>
+              <circle cx="74.2" cy="2.2" r="2.2"></circle>
+              <circle cx="290.2" cy="2.2" r="2.2"></circle>
+              <circle cx="98.2" cy="2.2" r="2.2"></circle>
+              <circle cx="314.2" cy="2.2" r="2.2"></circle>
+              <circle cx="122.2" cy="2.2" r="2.2"></circle>
+              <circle cx="338.2" cy="2.2" r="2.2"></circle>
+              <circle cx="146.2" cy="2.2" r="2.2"></circle>
+              <circle cx="170.2" cy="2.2" r="2.2"></circle>
+              <circle cx="194.2" cy="26.2" r="2.2"></circle>
+              <circle cx="2.2" cy="26.2" r="2.2"></circle>
+              <circle cx="218.2" cy="26.2" r="2.2"></circle>
+              <circle cx="26.2" cy="26.2" r="2.2"></circle>
+              <circle cx="242.2" cy="26.2" r="2.2"></circle>
+              <circle cx="50.2" cy="26.2" r="2.2"></circle>
+              <circle cx="266.2" cy="26.2" r="2.2"></circle>
+              <circle cx="74.2" cy="26.2" r="2.2"></circle>
+              <circle cx="290.2" cy="26.2" r="2.2"></circle>
+              <circle cx="98.2" cy="26.2" r="2.2"></circle>
+              <circle cx="314.2" cy="26.2" r="2.2"></circle>
+              <circle cx="122.2" cy="26.2" r="2.2"></circle>
+              <circle cx="338.2" cy="26.2" r="2.2"></circle>
+              <circle cx="146.2" cy="26.2" r="2.2"></circle>
+              <circle cx="170.2" cy="26.2" r="2.2"></circle>
+              <circle cx="194.2" cy="50.2" r="2.2"></circle>
+              <circle cx="2.2" cy="50.2" r="2.2"></circle>
+              <circle cx="218.2" cy="50.2" r="2.2"></circle>
+              <circle cx="26.2" cy="50.2" r="2.2"></circle>
+              <circle cx="242.2" cy="50.2" r="2.2"></circle>
+              <circle cx="50.2" cy="50.2" r="2.2"></circle>
+              <circle cx="266.2" cy="50.2" r="2.2"></circle>
+              <circle cx="74.2" cy="50.2" r="2.2"></circle>
+              <circle cx="290.2" cy="50.2" r="2.2"></circle>
+              <circle cx="98.2" cy="50.2" r="2.2"></circle>
+              <circle cx="314.2" cy="50.2" r="2.2"></circle>
+              <circle cx="122.2" cy="50.2" r="2.2"></circle>
+              <circle cx="338.2" cy="50.2" r="2.2"></circle>
+              <circle cx="146.2" cy="50.2" r="2.2"></circle>
+              <circle cx="170.2" cy="50.2" r="2.2"></circle>
+              <circle cx="194.2" cy="74.2" r="2.2"></circle>
+              <circle cx="2.2" cy="74.2" r="2.2"></circle>
+              <circle cx="218.2" cy="74.2" r="2.2"></circle>
+              <circle cx="26.2" cy="74.2" r="2.2"></circle>
+              <circle cx="242.2" cy="74.2" r="2.2"></circle>
+              <circle cx="50.2" cy="74.2" r="2.2"></circle>
+              <circle cx="266.2" cy="74.2" r="2.2"></circle>
+              <circle cx="74.2" cy="74.2" r="2.2"></circle>
+              <circle cx="290.2" cy="74.2" r="2.2"></circle>
+              <circle cx="98.2" cy="74.2" r="2.2"></circle>
+              <circle cx="314.2" cy="74.2" r="2.2"></circle>
+              <circle cx="122.2" cy="74.2" r="2.2"></circle>
+              <circle cx="338.2" cy="74.2" r="2.2"></circle>
+              <circle cx="146.2" cy="74.2" r="2.2"></circle>
+              <circle cx="170.2" cy="74.2" r="2.2"></circle>
+              <circle cx="194.2" cy="98.2" r="2.2"></circle>
+              <circle cx="2.2" cy="98.2" r="2.2"></circle>
+              <circle cx="218.2" cy="98.2" r="2.2"></circle>
+              <circle cx="26.2" cy="98.2" r="2.2"></circle>
+              <circle cx="242.2" cy="98.2" r="2.2"></circle>
+              <circle cx="50.2" cy="98.2" r="2.2"></circle>
+              <circle cx="266.2" cy="98.2" r="2.2"></circle>
+              <circle cx="74.2" cy="98.2" r="2.2"></circle>
+              <circle cx="290.2" cy="98.2" r="2.2"></circle>
+              <circle cx="98.2" cy="98.2" r="2.2"></circle>
+              <circle cx="314.2" cy="98.2" r="2.2"></circle>
+              <circle cx="122.2" cy="98.2" r="2.2"></circle>
+              <circle cx="338.2" cy="98.2" r="2.2"></circle>
+              <circle cx="146.2" cy="98.2" r="2.2"></circle>
+              <circle cx="170.2" cy="98.2" r="2.2"></circle>
+              <circle cx="194.2" cy="122.2" r="2.2"></circle>
+              <circle cx="2.2" cy="122.2" r="2.2"></circle>
+              <circle cx="218.2" cy="122.2" r="2.2"></circle>
+              <circle cx="26.2" cy="122.2" r="2.2"></circle>
+              <circle cx="242.2" cy="122.2" r="2.2"></circle>
+              <circle cx="50.2" cy="122.2" r="2.2"></circle>
+              <circle cx="266.2" cy="122.2" r="2.2"></circle>
+              <circle cx="74.2" cy="122.2" r="2.2"></circle>
+              <circle cx="290.2" cy="122.2" r="2.2"></circle>
+              <circle cx="98.2" cy="122.2" r="2.2"></circle>
+              <circle cx="314.2" cy="122.2" r="2.2"></circle>
+              <circle cx="122.2" cy="122.2" r="2.2"></circle>
+              <circle cx="338.2" cy="122.2" r="2.2"></circle>
+              <circle cx="146.2" cy="122.2" r="2.2"></circle>
+              <circle cx="170.2" cy="122.2" r="2.2"></circle>
+              <circle cx="194.2" cy="146.2" r="2.2"></circle>
+              <circle cx="2.2" cy="146.2" r="2.2"></circle>
+              <circle cx="218.2" cy="146.2" r="2.2"></circle>
+              <circle cx="26.2" cy="146.2" r="2.2"></circle>
+              <circle cx="242.2" cy="146.2" r="2.2"></circle>
+              <circle cx="50.2" cy="146.2" r="2.2"></circle>
+              <circle cx="266.2" cy="146.2" r="2.2"></circle>
+              <circle cx="74.2" cy="146.2" r="2.2"></circle>
+              <circle cx="290.2" cy="146.2" r="2.2"></circle>
+              <circle cx="98.2" cy="146.2" r="2.2"></circle>
+              <circle cx="314.2" cy="146.2" r="2.2"></circle>
+              <circle cx="122.2" cy="146.2" r="2.2"></circle>
+              <circle cx="338.2" cy="146.2" r="2.2"></circle>
+              <circle cx="146.2" cy="146.2" r="2.2"></circle>
+              <circle cx="170.2" cy="146.2" r="2.2"></circle>
+              <circle cx="194.2" cy="170.2" r="2.2"></circle>
+              <circle cx="2.2" cy="170.2" r="2.2"></circle>
+              <circle cx="218.2" cy="170.2" r="2.2"></circle>
+              <circle cx="26.2" cy="170.2" r="2.2"></circle>
+              <circle cx="242.2" cy="170.2" r="2.2"></circle>
+              <circle cx="50.2" cy="170.2" r="2.2"></circle>
+              <circle cx="266.2" cy="170.2" r="2.2"></circle>
+              <circle cx="74.2" cy="170.2" r="2.2"></circle>
+              <circle cx="290.2" cy="170.2" r="2.2"></circle>
+              <circle cx="98.2" cy="170.2" r="2.2"></circle>
+              <circle cx="314.2" cy="170.2" r="2.2"></circle>
+              <circle cx="122.2" cy="170.2" r="2.2"></circle>
+              <circle cx="338.2" cy="170.2" r="2.2"></circle>
+              <circle cx="146.2" cy="170.2" r="2.2"></circle>
+              <circle cx="170.2" cy="170.2" r="2.2"></circle>
+              <circle cx="194.2" cy="194.2" r="2.2"></circle>
+              <circle cx="2.2" cy="194.2" r="2.2"></circle>
+              <circle cx="218.2" cy="194.2" r="2.2"></circle>
+              <circle cx="26.2" cy="194.2" r="2.2"></circle>
+              <circle cx="242.2" cy="194.2" r="2.2"></circle>
+              <circle cx="50.2" cy="194.2" r="2.2"></circle>
+              <circle cx="266.2" cy="194.2" r="2.2"></circle>
+              <circle cx="74.2" cy="194.2" r="2.2"></circle>
+              <circle cx="290.2" cy="194.2" r="2.2"></circle>
+              <circle cx="98.2" cy="194.2" r="2.2"></circle>
+              <circle cx="314.2" cy="194.2" r="2.2"></circle>
+              <circle cx="122.2" cy="194.2" r="2.2"></circle>
+              <circle cx="338.2" cy="194.2" r="2.2"></circle>
+              <circle cx="146.2" cy="194.2" r="2.2"></circle>
+              <circle cx="170.2" cy="194.2" r="2.2"></circle>
+              <circle cx="194.2" cy="218.2" r="2.2"></circle>
+              <circle cx="2.2" cy="218.2" r="2.2"></circle>
+              <circle cx="218.2" cy="218.2" r="2.2"></circle>
+              <circle cx="26.2" cy="218.2" r="2.2"></circle>
+              <circle cx="242.2" cy="218.2" r="2.2"></circle>
+              <circle cx="50.2" cy="218.2" r="2.2"></circle>
+              <circle cx="266.2" cy="218.2" r="2.2"></circle>
+              <circle cx="74.2" cy="218.2" r="2.2"></circle>
+              <circle cx="290.2" cy="218.2" r="2.2"></circle>
+              <circle cx="98.2" cy="218.2" r="2.2"></circle>
+              <circle cx="314.2" cy="218.2" r="2.2"></circle>
+              <circle cx="122.2" cy="218.2" r="2.2"></circle>
+              <circle cx="338.2" cy="218.2" r="2.2"></circle>
+              <circle cx="146.2" cy="218.2" r="2.2"></circle>
+              <circle cx="170.2" cy="218.2" r="2.2"></circle>
+              <circle cx="194.2" cy="242.2" r="2.2"></circle>
+              <circle cx="2.2" cy="242.2" r="2.2"></circle>
+              <circle cx="218.2" cy="242.2" r="2.2"></circle>
+              <circle cx="26.2" cy="242.2" r="2.2"></circle>
+              <circle cx="242.2" cy="242.2" r="2.2"></circle>
+              <circle cx="50.2" cy="242.2" r="2.2"></circle>
+              <circle cx="266.2" cy="242.2" r="2.2"></circle>
+              <circle cx="74.2" cy="242.2" r="2.2"></circle>
+              <circle cx="290.2" cy="242.2" r="2.2"></circle>
+              <circle cx="98.2" cy="242.2" r="2.2"></circle>
+              <circle cx="314.2" cy="242.2" r="2.2"></circle>
+              <circle cx="122.2" cy="242.2" r="2.2"></circle>
+              <circle cx="338.2" cy="242.2" r="2.2"></circle>
+              <circle cx="146.2" cy="242.2" r="2.2"></circle>
+              <circle cx="170.2" cy="242.2" r="2.2"></circle>
+              <circle cx="194.2" cy="266.2" r="2.2"></circle>
+              <circle cx="2.2" cy="266.2" r="2.2"></circle>
+              <circle cx="218.2" cy="266.2" r="2.2"></circle>
+              <circle cx="26.2" cy="266.2" r="2.2"></circle>
+              <circle cx="242.2" cy="266.2" r="2.2"></circle>
+              <circle cx="50.2" cy="266.2" r="2.2"></circle>
+              <circle cx="266.2" cy="266.2" r="2.2"></circle>
+              <circle cx="74.2" cy="266.2" r="2.2"></circle>
+              <circle cx="290.2" cy="266.2" r="2.2"></circle>
+              <circle cx="98.2" cy="266.2" r="2.2"></circle>
+              <circle cx="314.2" cy="266.2" r="2.2"></circle>
+              <circle cx="122.2" cy="266.2" r="2.2"></circle>
+              <circle cx="338.2" cy="266.2" r="2.2"></circle>
+              <circle cx="146.2" cy="266.2" r="2.2"></circle>
+              <circle cx="170.2" cy="266.2" r="2.2"></circle>
+              <circle cx="194.2" cy="290.2" r="2.2"></circle>
+              <circle cx="2.2" cy="290.2" r="2.2"></circle>
+              <circle cx="218.2" cy="290.2" r="2.2"></circle>
+              <circle cx="26.2" cy="290.2" r="2.2"></circle>
+              <circle cx="242.2" cy="290.2" r="2.2"></circle>
+              <circle cx="50.2" cy="290.2" r="2.2"></circle>
+              <circle cx="266.2" cy="290.2" r="2.2"></circle>
+              <circle cx="74.2" cy="290.2" r="2.2"></circle>
+              <circle cx="290.2" cy="290.2" r="2.2"></circle>
+              <circle cx="98.2" cy="290.2" r="2.2"></circle>
+              <circle cx="314.2" cy="290.2" r="2.2"></circle>
+              <circle cx="122.2" cy="290.2" r="2.2"></circle>
+              <circle cx="338.2" cy="290.2" r="2.2"></circle>
+              <circle cx="146.2" cy="290.2" r="2.2"></circle>
+              <circle cx="170.2" cy="290.2" r="2.2"></circle>
+              <circle cx="194.2" cy="314.2" r="2.2"></circle>
+              <circle cx="2.2" cy="314.2" r="2.2"></circle>
+              <circle cx="218.2" cy="314.2" r="2.2"></circle>
+              <circle cx="26.2" cy="314.2" r="2.2"></circle>
+              <circle cx="242.2" cy="314.2" r="2.2"></circle>
+              <circle cx="50.2" cy="314.2" r="2.2"></circle>
+              <circle cx="266.2" cy="314.2" r="2.2"></circle>
+              <circle cx="74.2" cy="314.2" r="2.2"></circle>
+              <circle cx="290.2" cy="314.2" r="2.2"></circle>
+              <circle cx="98.2" cy="314.2" r="2.2"></circle>
+              <circle cx="314.2" cy="314.2" r="2.2"></circle>
+              <circle cx="122.2" cy="314.2" r="2.2"></circle>
+              <circle cx="338.2" cy="314.2" r="2.2"></circle>
+              <circle cx="146.2" cy="314.2" r="2.2"></circle>
+              <circle cx="170.2" cy="314.2" r="2.2"></circle>
+              <circle cx="194.2" cy="338.2" r="2.2"></circle>
+              <circle cx="2.2" cy="338.2" r="2.2"></circle>
+              <circle cx="218.2" cy="338.2" r="2.2"></circle>
+              <circle cx="26.2" cy="338.2" r="2.2"></circle>
+              <circle cx="242.2" cy="338.2" r="2.2"></circle>
+              <circle cx="50.2" cy="338.2" r="2.2"></circle>
+              <circle cx="266.2" cy="338.2" r="2.2"></circle>
+              <circle cx="74.2" cy="338.2" r="2.2"></circle>
+              <circle cx="290.2" cy="338.2" r="2.2"></circle>
+              <circle cx="98.2" cy="338.2" r="2.2"></circle>
+              <circle cx="314.2" cy="338.2" r="2.2"></circle>
+              <circle cx="122.2" cy="338.2" r="2.2"></circle>
+              <circle cx="338.2" cy="338.2" r="2.2"></circle>
+              <circle cx="146.2" cy="338.2" r="2.2"></circle>
+              <circle cx="170.2" cy="338.2" r="2.2"></circle>
+            </svg>
+          </span>
+          <span class="absolute top-[-40px] left-[-30px]">
+            <svg class="fill-yellow-500" width="77px" height="77px">
+              <path d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z"></path>
+            </svg>
+          </span>
+          <div class="w-[52%] h-[100px] absolute bg-white shadow-xl rounded-2xl bottom-[30px] max-xl:bottom-[50px] left-[10%] flex flex-col gap-1 max-xl:gap-3 p-3">
+
+            <div class="flex justify-between">
+              <h1>Client</h1>
+              <h1>Rating</h1>
+            </div>
+
+            <div class="flex justify-between">
+
+              <span class="flex items-center">
+                <img class="w-10 max-xl:w-8 max-sm:w-6 rounded-full" src="https://booking.webestica.com/assets/images/avatar/01.jpg" alt="">
+                <img class="w-10 max-xl:w-8 max-sm:w-6 rounded-full -translate-x-2" src="https://booking.webestica.com/assets/images/avatar/02.jpg" alt="">
+                <img class="w-10 max-xl:w-8 max-sm:w-6 rounded-full -translate-x-4" src="https://booking.webestica.com/assets/images/avatar/03.jpg" alt="">
+                <img class="w-10 max-xl:w-8 max-sm:w-6 rounded-full -translate-x-6" src="https://booking.webestica.com/assets/images/avatar/04.jpg" alt="">
+                <span class="w-10 max-xl:w-8 max-sm:w-6 h-10 max-xl:h-8 max-sm:h-6 rounded-full -translate-x-8 bg-blue-800 flex justify-center items-center text-white text-sm">1K+</span>
+              </span>
+
+              <span  class="flex items-center justify-center">
+                <p class="font-bold">4.5</p>
+                <span class="text-yellow-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </span>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- second child  -->
+        <div class="max-xl:w-[100%] w-[55%] pl-16 max-xl:pl-0">
+          <h1 class="text-[50px] font-bold leading-[55px] max-lg:text-[40px] pb-3">The Best Holidays Start Here!</h1>
+          <p class="py-9 text-slate-500">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.</p>
+          <div class="w-full flex flex-row flex-wrap">
+
+            <div class="basis-1/2 max-sm:basis-full py-1 px-3">
+              <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="fill-green-600" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+              </div>
+              <h1 class="my-2 text-lg font-bold">Quality Food</h1>
+              <p class="text-slate-500">Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
+            </div>
+
+            <div class="basis-1/2 max-sm:basis-full py-1 px-3">
+              <div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill fill-red-600" viewBox="0 0 16 16">
+                  <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                </svg>
+              </div>
+              <h1 class="my-2 text-lg font-bold">Quick Services</h1>
+              <p class="text-slate-500">Supposing so be resolving breakfast am or perfectly.</p>
+            </div>
+
+            <div class="basis-1/2 max-sm:basis-full py-1 px-3">
+              <div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check fill-orange-600" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                </svg>
+              </div>
+              <h1 class="my-2 text-lg font-bold">High Security</h1>
+              <p class="text-slate-500">Arranging rapturous did believe him all had supported.</p>
+            </div>
+
+            <div class="basis-1/2 max-sm:basis-full py-1 px-3">
+              <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill fill-blue-600" viewBox="0 0 16 16">
+                  <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
+                </svg>
+              </div>
+              <h1 class="my-2 text-lg font-bold">24 Hours Alert</h1>
+              <p class="text-slate-500">Rapturous did believe him all had supported.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div> 
+
+    </div>
+
+<!-- HOME 5  -->
+
+    <div class="mt-28 max-xl:mt-10 mb-10 flex items-center justify-center text-[50px] max-lg:text-[45px] font-bold">
+      <h1>Featured Hotels</h1>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="w-[88%] mx-[6%] flex flex-wrap  ">
+        
+        <div class="basis-1/4 max-xl:basis-2/4 max-sm:basis-full px-2 py-3">
+          <span class="relative">
+            <img class="rounded-xl hover:object-cover max-xl:w-full" src="https://booking.webestica.com/assets/images/category/hotel/01.jpg" alt="">
+            <span class="absolute bottom-4 left-5 flex items-center justify-center gap-2 bg-black text-white px-2 py-0.5 rounded-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              New York
+            </span>
+          </span>
+          <h1 class="px-2 font-bold text-[23px] py-1">Baga Confort</h1>
+          <div class="flex justify-between px-2">
+            <p class="text-green-500"><span class="font-bold text-lg">$455</span> /starting at</p>
+            <p class="font-bold flex items-center gap-1">4.5 
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="basis-1/4 max-xl:basis-2/4 max-sm:basis-full px-2 py-3">
+          <span class="relative">
+            <img class="rounded-xl hover:object-cover max-xl:w-full" src="https://booking.webestica.com/assets/images/category/hotel/02.jpg" alt="">
+            <span class="absolute bottom-4 left-5 flex items-center justify-center gap-2 bg-black text-white px-2 py-0.5 rounded-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              California
+            </span>
+          </span>
+          <h1 class="px-2 font-bold text-[23px] py-1">New Apollo Hotel</h1>
+          <div class="flex justify-between px-2">
+            <p class="text-green-500"><span class="font-bold text-lg">$585</span> /starting at</p>
+            <p class="font-bold flex items-center gap-1">4.8 
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="basis-1/4 max-xl:basis-2/4 max-sm:basis-full px-2 py-3">
+          <span class="relative">
+            <img class="rounded-xl hover:object-cover max-xl:w-full" src="https://booking.webestica.com/assets/images/category/hotel/03.jpg" alt="">
+            <span class="absolute bottom-4 left-5 flex items-center justify-center gap-2 bg-black text-white px-2 py-0.5 rounded-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              Los Angeles
+            </span>
+          </span>
+          <h1 class="px-2 font-bold text-[23px] py-1">New Age Hotel</h1>
+          <div class="flex justify-between px-2">
+            <p class="text-green-500"><span class="font-bold text-lg">$385</span> /starting at</p>
+            <p class="font-bold flex items-center gap-1">4.6 
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="basis-1/4 max-xl:basis-2/4 max-sm:basis-full px-2 py-3">
+          <span class="relative">
+            <img class="rounded-xl hover:object-cover max-xl:w-full" src="https://booking.webestica.com/assets/images/category/hotel/04.jpg" alt="">
+            <span class="absolute bottom-4 left-5 flex items-center justify-center gap-2 bg-black text-white px-2 py-0.5 rounded-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              Chicago
+            </span>
+          </span>
+          <h1 class="px-2 font-bold text-[23px] py-1">Helios Beach Resort</h1>
+          <div class="flex justify-between px-2">
+            <p class="text-green-500"><span class="font-bold text-lg">$665</span> /starting at</p>
+            <p class="font-bold flex items-center gap-1">4.8
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></span>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+<!-- HOME 6  -->
+
+
+    <div class="container mx-auto my-20">
+      <div class="w-[88%] max-xl:w-[90%] mx-[6%] max-xl:mx-[5%] flex flex-wrap justify-center items-center">
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/01.svg" alt="">
+        </div>
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/02.svg" alt="">
+        </div>
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/03.svg" alt="">
+        </div>
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/04.svg" alt="">
+        </div>
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/05.svg" alt="">
+        </div>
+        <div class="basis-2/12 max-lg:basis-3/12 max-sm:basis-6/12 py-3 px-7 max-xl:px-4 max-sm:px-7">
+          <img src="https://booking.webestica.com/assets/images/client/06.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+<!-- HOME 7  -->
+    
+
+    <div class="container mx-auto">
+      <div class="w-[88%] mx-[6%]">
+
+        <div class="carousel w-full">
+
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="w-full p-10 max-sm:p-5 flex flex-wrap max-sm:items-center max-sm:justify-center gap-0">
+              <div class="basis-5/12 max-lg:basis-full">
+                <div class="relative ">
+                   <img class="rounded-xl w-full" src="https://booking.webestica.com/assets/images/team/02.jpg" alt=""> 
+                    <span class="absolute p-2 bg-orange-400 rounded-xl w-14 top-10 -left-5">
+                    <img src="https://booking.webestica.com/assets/images/element/03.svg" alt="">
+                  </span>                 
+                </div>
+              </div>
+              <div class="basis-7/12 max-lg:basis-full flex flex-col pl-10 max-xl:px-2 justify-start items-start gap-2">
+                <span class="max-sm:pl-9">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote fill-blue-800" viewBox="0 0 16 16">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                  </svg>
+                </span>
+                <p class="text-[22px] max-xl:text-[18px] max-lg:text-[22px]">
+                  Passage its ten led hearted removal cordial.
+                  Preference any astonished unreserved Mrs.
+                  understood the Preference unreserved.
+                </p>
+                <span class="flex gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </span>
+                <h1 class="font-bold">Carolyn Qrtiz</h1>
+                <p>Ceo of Google</p>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="w-full max-sm:p-5 p-10 flex flex-wrap max-sm:items-center max-sm:justify-center gap-0">
+              <div class="basis-5/12 max-lg:basis-full">
+                <div class="relative">
+                  <img class="rounded-xl w-full" src="https://booking.webestica.com/assets/images/team/01.jpg" alt=""> 
+                    <span class="absolute p-2 bg-orange-400 rounded-xl w-14 top-10 -left-5">
+                      <img src="https://booking.webestica.com/assets/images/element/02.svg" alt="">
+                    </span>                 
+                </div>                 
+              </div>
+              <div class="basis-7/12 max-lg:basis-full flex flex-col pl-10 max-xl:px-5 justify-start items-start gap-2">
+                <span class="max-sm:pl-9">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote fill-blue-800" viewBox="0 0 16 16">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                  </svg>
+                </span>
+                <p class="text-[22px] max-xl:text-[18px] max-lg:text-[22px]">
+                  Moonlight newspaper up its enjoyment agreeable depending.
+                  Timed voice share led him to widen noisy young.
+                  At weddings believed in laughing
+                </p>
+                <span class="flex gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill fill-yellow-500" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </span>
+                <h1 class="font-bold">Billy Vasquez</h1>
+                <p>Ceo of Apple</p>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          
+        </div>  
+
+      </div>
+    </div>
+
+<!-- HOME 8      -->
+
+    <div class="flex items-center justify-center mb-20 text-[50px] max-lg:text-[45px] font-bold">
+      <h1>Explore Nearby</h1>
+    </div>
+
+    <div class="w-[88%] mx-[6%] max-xl:w-[90%] max-xl:mx-[5%] flex flex-wrap justify-center items-start mb-20">
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/01.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">San Francisco</h1>
+        <p class="text-slate-400">13 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/02.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Los Angeles</h1>
+        <p class="text-slate-400">25 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/03.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Miami</h1>
+        <p class="text-slate-400">45 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/04.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Sanjosh</h1>
+        <p class="text-slate-400">55 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/05.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">New York</h1>
+        <p class="text-slate-400">1-hour drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/06.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">North Justen</h1>
+        <p class="text-slate-400">2-hour drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/07.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Rio</h1>
+        <p class="text-slate-400">20 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/08.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Las Vegas</h1>
+        <p class="text-slate-400">20 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/09.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Texas</h1>
+        <p class="text-slate-400">20 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/10.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Chicago</h1>
+        <p class="text-slate-400">55 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/11.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">New Keagan</h1>
+        <p class="text-slate-400">35 min drive</p>
+      </div>
+
+      <div class="basis-2/12 max-xl:basis-3/12 max-lg:basis-4/12 max-sm:basis-6/12 px-5 pt-3 box-border flex flex-col items-center justify-center gap-2">
+        <img class="rounded-full" src="https://booking.webestica.com/assets/images/category/hotel/nearby/01.jpg" alt="">
+        <h1 class="font-bold text-[23px] text-center leading-[30px] text-slate-950">Oslo</h1>
+        <p class="text-slate-400">1 hour 13 min drive</p>
+      </div>
+
+
+    </div>
+
+
+<!-- footer      -->
+
+    <div class="w-full bg-gray-200 py-20">
+      <div class="w-[88%] mx-[6%] flex flex-wrap">
+        <div class="basis-1/2 max-sm:basis-full p-3">
+          <div class="w-full h-full bg-white px-5 py-7 rounded-xl flex items-center gap-4">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/></svg>
+            </span>
+            <div>
+              <h1 class="font-bold text-lg">24/7 Help</h1>
+              <p class="text-slate-400">If we fall short of your expectation in any way, let us know</p>
+            </div>
+          </div>
+        </div>
+        <div class="basis-1/2 max-sm:basis-full p-3">
+            <div class="w-full h-full bg-white px-5 py-7 rounded-xl flex items-center gap-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/></svg>
+              </span>
+              <div>
+                <h1 class="font-bold text-lg">Payment Trust</h1>
+                <p class="text-slate-400">All refunds come with no questions asked guarantee</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="w-[88%] mx-[6%]">
+        <h1 class="p-3 font-bold text-xl">Download app</h1>
+      </div>
+
+      <div class="w-[88%] mx-[6%] p-3 flex items-center justify-start gap-3">
+        <img class="h-16 max-sm:h-10" src="https://booking.webestica.com/assets/images/element/google-play.svg" alt="">
+        <img class="h-16 max-sm:h-10" src="https://booking.webestica.com/assets/images/element/app-store.svg" alt="">
+      </div>
+
+
+    </div>
+
+
+    <div class="w-full">
+      
+      <footer class="bg-slate-900 dark:bg-gray-900 text-gray-400">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="xl:flex xl:justify-between">
+              <div class="mb-6 md:mb-0 flex flex-col justify-center items-start w-54 max-xl:w-full max-xl:h-[220px] gap-3">
+                  <img src="https://booking.webestica.com/assets/images/logo-light.svg" class="h-10 mr-3" alt="FlowBite Logo" />
+                  <p>Departure defective arranging rapturous did believe him all had supported.</p>
+                  <p>+1234 568 963</p>
+                  <p>example@gmail.com</p>
+              </div>
+              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Pages</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-2">
+                              <a href="https://flowbite.com/" class="hover:underline">About us</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="https://tailwindcss.com/" class="hover:underline">Contact us</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="https://tailwindcss.com/" class="hover:underline">News and Blogs</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="https://tailwindcss.com/" class="hover:underline">Meet a team</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Link</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-2">
+                              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Sign up</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Sign in</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Privacy policy</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Terms</a>
+                          </li>
+                          <li class="mb-2">
+                           <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Cookies</a>
+                           </li>
+                          <li class="mb-2">
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Supports</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Global Site</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-2">
+                              <a href="#" class="hover:underline">India</a>
+                          </li>
+                          <li class="mb-2">
+                              <a href="#" class="hover:underline">Indonesia</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="#" class="hover:underline">California</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="#" class="hover:underline">Canada</a>
+                          </li>
+                          <li class="mb-2">
+                            <a href="#" class="hover:underline">Malaysia</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                    <h2 class="mb-6 text-sm font-semibold  uppercase dark:text-white">Global Site</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-2">
+                            <a href="#" class="hover:underline">Hotel</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:underline">Flight</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="#" class="hover:underline">Tour</a>
+                        </li>
+                        <li class="mb-2">
+                          <a href="#" class="hover:underline">Cabs</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
+          <div class="my-7 text-xl font-bold">
+            <h1>Top Links</h1>
+          </div>
+
+          <div class="flex flex-wrap gap-3 mb-7">
+            <span class="font-bold hover:text-blue-500"><a href="#">flights</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Hotel</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Tour</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Cabs</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">About</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Contact us</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Blogs</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Services</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Detail page</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Services</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Policy</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Testimonial</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Newsletter</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Podcasts</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Protests</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">NewsCyber</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Education</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Sports</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Tech and Auto</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Opinion</a></span>
+            <span class="font-bold hover:text-blue-500"><a href="#">Share Market</a></span>
+          </div>
+
+          <div class="flex justify-between flex-wrap mb-7">
+
+            <div>
+              <h1 class="font-bold text-xl mb-3">Payment & Security</h1>
+              <span class="flex items-center gap-2">
+                <img class="h-6" src="https://booking.webestica.com/assets/images/element/paypal.svg" alt="">
+                <img class="h-6" src="https://booking.webestica.com/assets/images/element/visa.svg" alt="">
+                <img class="h-6" src="https://booking.webestica.com/assets/images/element/mastercard.svg" alt="">
+                <img class="h-6" src="https://booking.webestica.com/assets/images/element/expresscard.svg" alt="">
+              </span>
+            </div>
+
+            <div>
+              <h1 class="font-bold text-xl mb-3">Follow us on</h1>
+              <span class="flex items-center gap-2">
+                <span class="h-8 w-8 rounded-lg flex items-center justify-center bg-blue-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook fill-white" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                </span>
+                <span class="h-8 w-8 rounded-lg flex items-center justify-center bg-red-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram fill-white" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </span>
+                <span class="h-8 w-8 rounded-lg flex items-center justify-center bg-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x fill-black" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                  </svg>
+                </span>
+                <span class="h-8 w-8 rounded-lg flex items-center justify-center bg-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp fill-black" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+                </span>
+              </span>
+            </div>
+
+          </div>
+
+
+
+
+
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+              </span>
+              <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                        </svg>
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                            <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                        </svg>
+                      <span class="sr-only">Discord community</span>
+                  </a>
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                        <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                    </svg>
+                      <span class="sr-only">Twitter page</span>
+                  </a>
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="sr-only">GitHub account</span>
+                  </a>
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                    </svg>
+                      <span class="sr-only">Dribbble account</span>
+                  </a>
+              </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
